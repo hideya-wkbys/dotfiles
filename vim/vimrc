@@ -3,7 +3,7 @@
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim7用試作
 "
-" Last Change: 29-Apr-2011.
+" Last Change: 27-Apr-2022.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -226,3 +226,14 @@ endif
 set formatexpr=autofmt#japanese#formatexpr()
 
 " Copyright (C) 2011 KaoriYa/MURAOKA Taro
+
+"(hideya)ここまで、ほぼデフォルト
+"(hideya)以下、いろいろと追記
+
+"x,d,pをレジスタ使わないやつで置換
+noremap x "_x
+noremap X "_X
+noremap d "_d
+noremap D "_D
+xnoremap p "_dP
+xnoremap P "_dP
