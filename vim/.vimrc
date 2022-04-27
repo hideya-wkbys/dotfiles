@@ -30,8 +30,11 @@ set autoindent
 
 "バックアップファイルを作る
 set backup
-set backupdir=$HOME¥vim_backup
-
+if has('mac')
+	set backupdir=$HOME¥vim_backup
+elseif has('win32') || has('win64')
+	set backupdir=$HOME/vim_backup
+endif
 
 "行番号を表示する
 "set number
