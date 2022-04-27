@@ -48,3 +48,5 @@ set viminfo='100,%
 "no ‾un file
 set noundofile
 
+"デフォルトの設定ファイルを読み込んでおく
+source $VIMRUNTIME/defaults.vim
