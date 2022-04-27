@@ -1,3 +1,10 @@
+"from https://itcweb.cc.affrc.go.jp/affrit/faq/tips/vim-enc
+"文字コード自動判別
+:set encoding=utf-8
+:set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+:set fileformats=unix,dos,mac
+
+"mapping
 nnoremap H 0
 xnoremap H 0
 nnoremap L $
@@ -15,15 +22,15 @@ xnoremap P "_dP
 
 
 "以下、 http://blog.blueblack.net/item_110 より一部拝借
-"クリップボードをWindowsと連携
+"クリップボードをWindows/Macと連携
 set clipboard=unnamed
 
 "新しい行のインデントを現在行と同じにする
 set autoindent
 
-"バックアップファイルを作るディレクトリ
-"set nobackup
-set backupdir=C:¥vim_backup
+"バックアップファイルを作る
+set backup
+set backupdir=$HOME¥vim_backup
 
 
 "行番号を表示する
@@ -41,9 +48,3 @@ set viminfo='100,%
 "no ‾un file
 set noundofile
 
-
-"from https://itcweb.cc.affrc.go.jp/affrit/faq/tips/vim-enc
-"文字コード自動判別
-:set encoding=utf-8
-:set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
-:set fileformats=unix,dos,mac
