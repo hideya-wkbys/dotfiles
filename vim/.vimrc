@@ -20,7 +20,6 @@ xnoremap D "_D
 xnoremap p "_dP
 xnoremap P "_dP
 
-
 "以下、 http://blog.blueblack.net/item_110 より一部拝借
 "クリップボードをWindows/Macと連携
 set clipboard=unnamed
@@ -30,11 +29,7 @@ set autoindent
 
 "バックアップファイルを作る
 set backup
-if has('mac')
-	set backupdir=$HOME¥vim_backup
-elseif has('win32') || has('win64')
-	set backupdir=$HOME/vim_backup
-endif
+set backupdir=$HOME/vim_backup
 
 "行番号を表示する
 "set number
