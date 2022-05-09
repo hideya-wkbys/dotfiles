@@ -31,6 +31,9 @@ set autoindent
 set backup
 set backupdir=$HOME/vim_backup
 
+"swpファイルの場所を変更
+set directory=$HOME/vim_backup
+
 "行番号を表示する
 "set number
 
