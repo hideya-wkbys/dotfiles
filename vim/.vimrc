@@ -10,9 +10,10 @@ xnoremap H 0
 nnoremap L $
 xnoremap L $
 
-"x,d,pをレジスタ使わないやつで置換
-noremap x "_x
-noremap X "_X
+"d,pをレジスタ使わないやつで置換
+"xはカット操作に割り当てることにしたのでそのまま
+"noremap x "_x
+"noremap X "_X
 nnoremap d "_d
 xnoremap d "_d
 nnoremap D "_D
